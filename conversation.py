@@ -23,7 +23,7 @@ class Conversation():
             game.ping(30, 60)
             self.send_reply(line, "Waiting 30 seconds...")
         elif cmd == "name":
-            self.send_reply(line, "Its a self learning bot! But my master ordered me not to tell my name!")
+            self.send_reply(line, "bot-kingnandi_chessbot, using official stockfish nnue integrated by alphabeta pruning!")
         elif cmd == "eval":
             stats = self.engine.get_stats()
             self.send_reply(line, ", ".join(stats))
