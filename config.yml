@@ -49,7 +49,7 @@ option name EvalFile type string : nn-62ef826d1a6d.nnue
 #    go_commands:             # additional options to pass to the UCI go command
 #      nodes: 1000               # Search so many nodes only.
 #      depth: 20               # Search depth ply only.
-#      movetime: 1         # Integer. Search exactly movetime milliseconds.
+#      movetime: 1000         # Integer. Search exactly movetime milliseconds.
 #  xboard_options:            # arbitrary xboard options passed to the engine
 #    cores: "4"
 #    memory: "4096"
