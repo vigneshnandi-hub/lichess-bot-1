@@ -89,4 +89,4 @@ challenge:                   # incoming challenges
 #   - correspondence
   modes:                     # game modes to accept
 #   -rated                 # rated games
-#   - rated                  # rated games - must comment if the engine doesn't try to win
+#   -unrated                  # unrated games - must comment if the engine doesn't try to win
