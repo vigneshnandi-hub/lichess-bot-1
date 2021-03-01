@@ -14,6 +14,12 @@ engine:                      # engine settings
         - elo3300.bin
         - bestbook.bin
         - network.bin
+        - book1.bin
+        - book2.bin
+        - book3.bin
+        - book4.bin
+        - book5.bin
+        - book6.bin
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -37,7 +43,7 @@ option name nodestime type spin : 1000
 option name UCI_Chess960 type check : false
 option name UCI_AnalyseMode type check : false
 option name UCI_LimitStrength type check : false
-option name UCI_Elo type spin : 2800
+option name UCI_Elo type spin : 1400
 option name UCI_ShowWDL type check : false
 option name SyzygyPath type string : <empty>
 option name SyzygyProbeDepth type spin : 100
