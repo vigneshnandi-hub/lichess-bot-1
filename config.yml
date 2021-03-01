@@ -14,12 +14,13 @@ engine:                      # engine settings
         - elo3300.bin
         - bestbook.bin
         - network.bin
-        - book1.bin
-        - book2.bin
+        - bestbook.bin
+        - network.bin
         - book3.bin
         - book4.bin
         - book5.bin
         - book6.bin
+        
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -37,13 +38,13 @@ option name Hash type spin : 512
 option name Ponder type check : true
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 1000
+option name Move Overhead type spin : 400
 option name Slow Mover type spin : 1
 option name nodestime type spin : 1000
 option name UCI_Chess960 type check : false
 option name UCI_AnalyseMode type check : false
 option name UCI_LimitStrength type check : false
-option name UCI_Elo type spin : 1400
+option name UCI_Elo type spin : 1500
 option name UCI_ShowWDL type check : false
 option name SyzygyPath type string : <empty>
 option name SyzygyProbeDepth type spin : 100
@@ -55,7 +56,7 @@ option name EvalFile type string : nn-62ef826d1a6d.nnue
 #    go_commands:             # additional options to pass to the UCI go command
 #      nodes: 1000               # Search so many nodes only.
 #      depth: 20               # Search depth ply only.
-#      movetime: 1500         # Integer. Search exactly movetime milliseconds.
+#      movetime: 5000         # Integer. Search exactly movetime milliseconds.
 #  xboard_options:            # arbitrary xboard options passed to the engine
 #    cores: "4"
 #    memory: "4096"
