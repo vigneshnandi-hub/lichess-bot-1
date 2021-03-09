@@ -1,4 +1,4 @@
-token: "n7cGMvV92TaTt0zM"     # lichess OAuth2 Token
+token: "YfSGLYIdv4Z6WwUN"     # lichess OAuth2 Token
 url: "https://lichess.org/"  # lichess base URL
 
 engine:                      # engine settings
@@ -30,7 +30,7 @@ engine:                      # engine settings
  
 option name Contempt type spin : 24
 option name Analysis Contempt type combo : Both var Off var White var Black var Both
-option name Threads type spin : 8
+option name Threads type spin : 4
 option name Hash type spin : 400
 option name Ponder type check : true
 option name MultiPV type spin : 1
@@ -39,7 +39,7 @@ option name Move Overhead type spin : 5000
 option name nodestime type spin : 1000
 option name UCI_Chess960 type check : true
 option name UCI_AnalyseMode type check : true
-option name UCI_LimitStrength type check : false
+option name UCI_LimitStrength type check : true
 option name UCI_Elo type spin : 2800
 option name UCI_ShowWDL type check : false
 option name SyzygyPath type string : <empty>
@@ -91,5 +91,5 @@ challenge:                   # incoming challenges
 #   - classical
 #   - correspondence
   modes:                     # game modes to accept
-#   -rated                 # rated games
-#   -unrated                  # unrated games - must comment if the engine doesn't try to win
+   -rated                 # rated games
+   -unrated                  # unrated games - must comment if the engine doesn't try to win
